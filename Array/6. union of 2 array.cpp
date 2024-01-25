@@ -20,3 +20,6 @@ class Solution{
     }
 
 };
+
+//approach 2 
+take  pointers and like mergesort compare each element and then smaller will be pushed to res
