@@ -11,9 +11,9 @@ class Solution {
         int largest = arr[n-1] - k;
         int mini, maxi;
         
-        for(int i=0; i<n; i++){
-            mini = min(smallest, arr[i+1] - k);
-            maxi = max(largest, arr[i] + k);
+        for(int i=1; i<n; i++){
+            maxi = max(largest, arr[i-1] + k); 
+            mini = min(smallest, arr[i] - k);
             
             if(mini < 0) continue;
             
