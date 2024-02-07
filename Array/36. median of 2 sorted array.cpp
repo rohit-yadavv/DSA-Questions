@@ -22,6 +22,7 @@ public:
             ans.push_back(nums1[i]);
             i++;
         }
+        
         while (j < n2) {
             ans.push_back(nums2[j]);
             j++;
