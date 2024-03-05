@@ -2,7 +2,7 @@
 
 class Solution {
 public:
-    int subarraySum(vector<int>& nums, int k) {
+    int subArraySum(vector<int>& nums, int k) {
         map<int, int> preSumsMap;
         preSumsMap[0]++;
         int count=0;
