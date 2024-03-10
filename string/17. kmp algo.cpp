@@ -1,28 +1,21 @@
 // ! https://www.geeksforgeeks.org/problems/longest-prefix-suffix2527/1
-class Solution
-{
+class Solutio{
 public:
-  int lps(string s)
-  {
+  int lps(string s){
     vector<int> lpst(s.size(), 0);
     int pre = 0, suf = 1;
 
-    while (suf < s.size())
-    {
-      if (s[pre] == s[suf])
-      {
+    while (suf < s.size()){
+      if (s[pre] == s[suf]){
         lpst[suf] = pre + 1;
         pre++, suf++;
       }
-      else
-      {
-        if (pre == 0)
-        {
+      else{
+        if (pre == 0){
           lpst[suf] = 0;
           suf++;
         }
-        else
-        {
+        else{
           pre = lpst[pre - 1];
         }
       }
