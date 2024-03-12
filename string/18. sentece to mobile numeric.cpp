@@ -1,6 +1,9 @@
 // ! https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
-class Solution {
 
+#include <iostream>>
+using namespace std;
+
+class Solution {
 private:
     void solve(string digits, string output, int index, vector<string>& ans, string mapping[]) {
         if (index >= digits.length()) {
